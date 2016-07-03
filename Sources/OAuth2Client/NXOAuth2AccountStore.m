@@ -295,6 +295,7 @@ NSString * const kNXOAuth2AccountStoreAccountType = @"kNXOAuth2AccountStoreAccou
         redirectURL:(NSURL *)aRedirectURL
       keyChainGroup:(NSString *)aKeyChainGroup
           tokenType:(NSString *)aTokenType
+          additionalRequestParams:(NSDictionary *)aParams
      forAccountType:(NSString *)anAccountType;
 {
     NSAssert(aKeyChainGroup, @"keyChainGroup must be non-nil");
@@ -308,6 +309,7 @@ NSString * const kNXOAuth2AccountStoreAccountType = @"kNXOAuth2AccountStoreAccou
                                    aTokenURL, kNXOAuth2AccountStoreConfigurationTokenURL,
                                    aTokenType, kNXOAuth2AccountStoreConfigurationTokenType,
                                    aKeyChainGroup, kNXOAuth2AccountStoreConfigurationKeyChainGroup,
+                                   aParams, kNXOAuth2AccountStoreConfigurationAdditionalAuthenticationParameters,
                                    aRedirectURL, kNXOAuth2AccountStoreConfigurationRedirectURL, nil];
     
     if (self.keychainAccessGroup) {
