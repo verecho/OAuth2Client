@@ -114,7 +114,6 @@ typedef void(^NXOAuth2PreparedAuthorizationURLHandler)(NSURL *preparedURL);
         redirectURL:(NSURL *)aRedirectURL
       keyChainGroup:(NSString *)aKeyChainGroup
           tokenType:(NSString *)aTokenType
-          additionalRequestParams:(NSDictionary *)aParams
      forAccountType:(NSString *)anAccountType;
 
 - (void)setConfiguration:(NSDictionary *)configuration forAccountType:(NSString *)accountType;
