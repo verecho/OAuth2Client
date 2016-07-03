@@ -256,7 +256,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
                                        @"code+id_token", @"response_type",
                                        clientId, @"client_id",
                                        [redirectURL absoluteString], @"redirect_uri",
-                                       @"someid", @"nonce",
+                                       @"7362CAEA-9CA5-4B43-9BA3-34D7C303EBA7", @"nonce",
                                        nil];
     
     if (self.additionalAuthenticationParameters) {
